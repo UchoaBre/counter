@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/public/css/main.css">
+    <link rel="stylesheet" href="/public/css/contador.css">
+    <title>Contador</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <strong>Contador</strong>
+            <button id="restart">Reiniciar</button>
+        </header>
+        <main>
+            <strong>Faltam</strong>
+            <div class="time_left">
+                <div class="days">
+                    <h1 class="time">0</h1>
+                    <p id="d-word">Dias</p>
+                </div>
+                <div class="hours">
+                    <h1 class="time">0</h1>
+                    <p id="h-word">Horas</p>
+                </div>
+                <div class="minutes">
+                    <h1 class="time">0</h1>
+                    <p id="m-word">Minutos</p>
+                </div>
+                <div class="seconds">
+                    <h1 class="time">0</h1>
+                    <p id="s-word">Segundos</p>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="/public/scripts/counter.js"></script>
+</body>
+</html>

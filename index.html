@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./public/css/main.css">
+    <link rel="stylesheet" href="./public/css/index.css">
+    <title>Contador</title>
+</head>
+<body>
+    <div class="container">
+        <main class="counter-container">
+            <form class="counter" method="GET">
+                <strong>Contador</strong>
+                <label>Informe uma data</label>
+                <input name="date" type="text" placeholder="    DD/MM/AAAA" onfocus="(this.type='date')">  
+                <button type="button" id="start">
+                    Iniciar contagem
+                </button>
+            </form>    
+        </main>
+    </div>
+
+    <script src="./public/scripts/index.js"></script>
+</body>
+</html>
