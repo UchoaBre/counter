@@ -2,7 +2,7 @@ const date = localStorage.userDate;
 const restartButton = document.querySelector("#restart");
 
 restartButton.addEventListener('click', event => {
-    window.location.replace('/src/pages/index.html');
+    window.location.replace('/index.html');
 });
 
 function start() {
