@@ -7,6 +7,6 @@ startButton.addEventListener('click', event => {
     if (localStorage.userDate == "") {
         alert("Você precisa definir uma data!");
     } else {
-        window.location.replace("/src/pages/contador.html");
+        window.location.replace("./src/pages/contador.html");
     }
 });
