@@ -39,4 +39,4 @@ Tempo até a data limite:
 <img src="./design/contador.jpeg">
 
 # Teste esta aplicação
-Através do link: https://adoring-noether-9825f7.netlify.app
+Através do link: https://silly-bardeen-77d66a.netlify.app
