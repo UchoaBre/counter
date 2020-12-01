@@ -30,6 +30,11 @@ function start() {
     document.querySelector("#h-word").innerHTML = hoursLeft == "1" ? "Hora" : "Horas";
     document.querySelector("#m-word").innerHTML = minutesLeft == "1" ? "Minuto" : "Minutos";
     document.querySelector("#s-word").innerHTML = secondsLeft == "1" ? "Segundo" : "Segundos";
+
+    document.querySelector("#day").innerHTML = daysLeft < "0" ? "0" : "0";
+    document.querySelector("#hour").innerHTML = hoursLeft < "0" ? "0" : "0";
+    document.querySelector("#minute").innerHTML = minutesLeft < "0" ? "0" : "0";
+    document.querySelector("#second").innerHTML = secondsLeft < "0" ? "0" : "0";
 }
 
 setInterval(start, 1000);
