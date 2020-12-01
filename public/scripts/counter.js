@@ -31,10 +31,10 @@ function start() {
     document.querySelector("#m-word").innerHTML = minutesLeft == "1" ? "Minuto" : "Minutos";
     document.querySelector("#s-word").innerHTML = secondsLeft == "1" ? "Segundo" : "Segundos";
 
-    document.querySelector("#day").innerHTML = daysLeft < "0" ? "0" : "0";
-    document.querySelector("#hour").innerHTML = hoursLeft < "0" ? "0" : "0";
-    document.querySelector("#minute").innerHTML = minutesLeft < "0" ? "0" : "0";
-    document.querySelector("#second").innerHTML = secondsLeft < "0" ? "0" : "0";
+    document.querySelector("#day").innerHTML = daysLeft <= "0" ? "0" : daysLeft;
+    document.querySelector("#hour").innerHTML = hoursLeft <= "0" ? "0" : hoursLeft;
+    document.querySelector("#minute").innerHTML = minutesLeft <= "0" ? "0" : minutesLeft;
+    document.querySelector("#second").innerHTML = secondsLeft <= "0" ? "0" : secondsLeft;
 }
 
 setInterval(start, 1000);
