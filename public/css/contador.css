@@ -67,12 +67,16 @@ main strong {
         margin: 0;
     }
 
+    main {
+        margin: 40px;
+    }
+
     .time_left {
         width: 366px;
         flex-wrap: wrap;
     }
 
     .days, .hours, .minutes, .seconds {
-        margin: 16px;
+        margin: 0 16px 16px;
     }
 }
