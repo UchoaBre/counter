@@ -3,10 +3,11 @@ body {
 }
 
 header {
+    width: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 18px;
+    margin: 20px 0;
 }
 
 header strong {
@@ -26,8 +27,13 @@ header button {
 }
 
 main {
+    width: fill;
     text-align: center;
-    margin: 200px;
+    margin: 200px 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 main strong {
@@ -38,7 +44,7 @@ main strong {
 
 .time_left {
     width: 1000px;
-    margin: 20px auto 0;
+    margin: 20px 0;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -50,8 +56,23 @@ main strong {
     margin: 0;
 }
 
-.time_left h1 {
+.time_left .time {
     color: #ffffff;
     font-size: 130px;
     margin: 0;
+}
+
+@media (max-width: 1000px) {
+    header {
+        margin: 0;
+    }
+
+    .time_left {
+        width: 366px;
+        flex-wrap: wrap;
+    }
+
+    .days, .hours, .minutes, .seconds {
+        margin: 16px;
+    }
 }

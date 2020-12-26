@@ -11,6 +11,7 @@
 
 .counter {
     display: flex;
+    align-items: center;
     flex-direction: column;
     text-align: center;
 }
@@ -48,4 +49,21 @@
     height: 58px;
     border-radius: 22px;
     border: none;
+}
+
+/* responsive */
+
+@media (max-width: 375px) {
+    .counter strong {
+        margin-bottom: 76px;
+    }
+
+    .counter input {
+        width: 300px;
+        margin: 18px;
+    }
+
+    .counter button {
+        width: 300px;
+    }
 }
